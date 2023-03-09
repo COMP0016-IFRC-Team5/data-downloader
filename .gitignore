@@ -365,3 +365,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/macOS,Windows,VisualStudioCode,Python,Jetbrains
+data/
