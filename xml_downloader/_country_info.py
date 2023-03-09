@@ -1,3 +1,5 @@
+__all__ = ["countries"]
+
 country_code = ["com", "dji", "eth", "gmb", "gin", "ken", "mdg", "mli", "mus",
                 "moz", "mar", "nam", "ner", "sen", "sle",
                 "syc", "tgo", "tun", "uga", "znz", "arg", "blz", "bol", "chl",
@@ -30,4 +32,4 @@ country_name = ["Comoros", "Djibouti", "Ethiopia", "Gambia", "Guinea", "Kenya",
                 "Secretary of Pacific Community (23 counries)",
                 "Datasets for the G∀R 2015"]
 
-countries = zip(country_code, country_name)
+countries = dict(zip(country_code, country_name))
