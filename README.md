@@ -3,7 +3,7 @@
 A simple data processor for the [DesInventar](https://www.desinventar.net).
 
 This tool is a part of a UCL IXN project: "[Define return periods for low-impact 
-hazardous events](https://github.com/COMP0016-IFRC-Team5/data-visualiser/edit/main/README.md#L12)" with IFRC. 
+hazardous events](https://github.com/COMP0016-IFRC-Team5/data-visualiser/blob/main/README.md#project-introduction)" with IFRC. 
 
 ## Installation
 
