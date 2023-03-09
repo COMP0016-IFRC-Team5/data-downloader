@@ -74,7 +74,7 @@ class CSVCrawler:
     def __get_disaster_types_for_all_countries(self, ignore_cache: int):
         country_list = self.__dumper.load(CSVCrawler.COUNTRY_CACHE_FILE) \
             if self.__dumper.has_cache(CSVCrawler.COUNTRY_CACHE_FILE) \
-            and ignore_cache <= 2 \
+               and ignore_cache <= 2 \
             else self.__retrieve_country_list()
         country_disasters_dict = \
             self.__make_country_disasters_dict(country_list, ignore_cache)
@@ -159,9 +159,9 @@ class CSVCrawler:
 
     def __get_country_disaster_dict(self, ignore_cache):
         return self.__dumper.load(CSVCrawler.DISASTERS_CACHE_FILE) \
-                if self.__dumper.has_cache(CSVCrawler.DISASTERS_CACHE_FILE) \
-                and ignore_cache == 0 \
-                else self.__get_disaster_types_for_all_countries(ignore_cache)
+            if self.__dumper.has_cache(CSVCrawler.DISASTERS_CACHE_FILE) \
+               and ignore_cache == 0 \
+            else self.__get_disaster_types_for_all_countries(ignore_cache)
 
     def run(self, mode=0):
         """
@@ -187,4 +187,4 @@ class CSVCrawler:
         country_disasters_dict = self.__get_country_disaster_dict(ignore_cache)
         for country, disasters in country_disasters_dict.items():
             self.download_country_data(country, disasters,
-                                             ignore_exist_databases)
+                                       ignore_exist_databases)
