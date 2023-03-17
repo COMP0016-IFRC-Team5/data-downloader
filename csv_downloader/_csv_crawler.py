@@ -126,7 +126,7 @@ class CSVCrawler:
                             "fichas.reubicados,fichas.evacuados," \
                             "fichas.valorus,fichas.valorloc,fichas.nescuelas," \
                             "fichas.nhospitales,fichas.nhectareas," \
-                            "fichas.cabezas,fichas.kmvias&_eventos= "
+                            "fichas.cabezas,fichas.kmvias&_eventos="
         return base_url + country.get_country_code() + middle_url + \
             query_data_stat + latter_url + wanted_data_types \
             + disaster.query_key
@@ -182,7 +182,7 @@ class CSVCrawler:
         if mode not in range(8):
             raise ValueError("Wrong mode number, should be in 0-7")
         logging.basicConfig(level=logging.INFO)
-        ignore_exist_databases = mode & 0b100 == 1
+        ignore_exist_databases = (mode >> 2) & 0b1 == 1
         ignore_cache = mode & 0b011
         country_disasters_dict = self.__get_country_disaster_dict(ignore_cache)
         for country, disasters in country_disasters_dict.items():
