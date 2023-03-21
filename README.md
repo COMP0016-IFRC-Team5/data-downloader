@@ -9,7 +9,7 @@ hazardous events](https://github.com/COMP0016-IFRC-Team5/data-visualiser/blob/ma
 
 ```bash
 git clone https://github.com/COMP0016-IFRC-Team5/data-downloader.git
-cd data-processor
+cd data-downloader
 ```
 
 ## Requirements
@@ -19,7 +19,7 @@ Install dependencies in any preferred way
 - Using conda ([Anaconda](https://docs.anaconda.com/anaconda/install/index.html) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html))
 ```bash
 conda env create -f conda_env.yml
-conda activate data-processor
+conda activate data-downloader
 ```
 
 - Using pip ([Python 3.10+](https://www.python.org/downloads/))
